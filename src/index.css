@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-soft-grey: #F5F5F5;
+  --color-text-grey: #666666;
+  --color-gold: #C5A047;
+  --color-gold-light: #D4B875;
+  --color-gold-dark: #A68436;
+
+  --font-sans: "Inter", "Neue Haas Grotesk", system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --letter-spacing-widest: .2em;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-black antialiased overflow-x-hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans font-bold uppercase tracking-widest;
+  }
+}
+
+@utility btn-outline {
+  @apply border border-white text-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-300;
+}
+
+@utility btn-primary {
+  @apply bg-black text-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-soft-grey hover:text-black transition-all duration-300;
+}
+
+@utility glass-nav {
+  @apply bg-black/80 backdrop-blur-md border-b border-white/10;
+}

@@ -1,0 +1,146 @@
+{
+    "nav": {
+        "home": "Beranda",
+        "about": "Tentang Kami",
+        "facilities": "Fasilitas",
+        "office": "Ruang Kantor",
+        "virtual_office": "Service & Virtual",
+        "location": "Lokasi",
+        "gallery": "Galeri",
+        "contact": "Kontak"
+    },
+    "hero": {
+        "tagline": "Pusat Seni dan Budaya",
+        "title": "Usmar Ismail",
+        "subtitle": "Hall",
+        "explore": "Jelajahi Venue",
+        "book": "Reservasi Sekarang",
+        "scroll": "Gulir"
+    },
+    "about": {
+        "tagline": "Warisan Kami",
+        "title": "Legasi Seni Luar Biasa",
+        "p1": "Usmar Ismail Hall merupakan Theater dan Gedung Pertunjukan terintegrasi pertama di Indonesia yang menggabungkan ruang sinema dan konser. Theater seluas 624 meter persegi memiliki kapasitas tempat duduk sebanyak 422 kursi.",
+        "p2": "Dirancang dengan interior eksklusif dan penataan lampu modern, Theater ini menunjang kenyamanan penonton dalam menikmati setiap acara. Theater multifungsi ini juga dilengkapi aula, ruang serbaguna, dan lobi luas untuk mendukung acara hiburan, kantor, seminar, graduation, hingga streaming.",
+        "more": "Pelajari Lebih Lanjut"
+    },
+    "facilities": {
+        "tagline": "Venue Kami",
+        "title": "Fasilitas Kelas Dunia",
+        "concert_hall": {
+            "title": "Aula Utama",
+            "desc": "Auditorium 450 kursi dengan akustik kelas dunia."
+        },
+        "recording": {
+            "title": "Studio Rekaman",
+            "desc": "Peralatan profesional untuk produksi audio berkualitas tinggi."
+        },
+        "conference": {
+            "title": "Ruang Konferensi",
+            "desc": "Ruang serbaguna untuk pertemuan kantor dan seminar."
+        },
+        "cinema": {
+            "title": "Mini Cinema",
+            "desc": "Bioskop intim untuk pemutaran film dan kreator independen."
+        }
+    },
+    "office": {
+        "tagline": "Penyewaan",
+        "title": "Ruang Kantor",
+        "desc": "Gedung Pusat Perfilman H. Usmar Ismail berada di lokasi yang sangat strategis dan mudah diakses kendaraan pribadi maupun umum.",
+        "size": "Ukuran: 30 m² – 400 m²",
+        "condition": "Kondisi Tersedia:",
+        "furnished": "Lengkap dengan Furnitur",
+        "partition": "Partisi",
+        "semi_furnished": "Semi Furnitur",
+        "contact": "Hubungi Kami",
+        "access": "Akses Strategis Transportasi Umum"
+    },
+    "virtual_office": {
+        "tagline": "Ruang kerja fleksibel",
+        "title": "Service & Virtual Office",
+        "desc": "Solusi kantor yang disewa harian, mingguan, bulanan hingga tahunan. Ideal untuk startup dan startup prestisius.",
+        "inquire": "Hubungi Sekarang",
+        "list": {
+            "elec": "Listrik & AC",
+            "wifi": "Wifi Cepat",
+            "print": "Print & Fotocopy",
+            "pantry": "Pantry & Air Mineral",
+            "lounge": "Executive Lounge",
+            "musholla": "Musholla",
+            "meeting": "Ruang Meeting",
+            "check": "Self Check-in & Out"
+        }
+    },
+    "location": {
+        "tagline": "Spesifikasi Gedung",
+        "title": "Informasi & Lokasi",
+        "desc": "Gedung Perkantoran Grade C di Segitiga Emas Jakarta, menggabungkan efisiensi dengan aksesibilitas utama.",
+        "specs": {
+            "type": "Tipe Gedung",
+            "height": "Ketinggian",
+            "area": "Luas Bangunan",
+            "avg_floor": "Rata-rata per Lantai",
+            "facilities": "Fasilitas Utama"
+        },
+        "location_title": "Lokasi Strategis",
+        "minutes": "{{count}} Menit",
+        "lrt": "Stasiun LRT Kuningan (Terintegrasi MRT, Busway, KRL)",
+        "walking": "Jalan Kaki",
+        "hotel": "JS Luwansa Hotel",
+        "hospital": "Rumah Sakit MMC",
+        "market": "Pasar Festival",
+        "mall": "Epicentrum Walk",
+        "quote": "Menunjang mobilitas tinggi dengan kemudahan akses.",
+        "specs_values": {
+            "type": "Kantor Grade C",
+            "height": "5 Lantai",
+            "area": "2.371 m²",
+            "avg_floor": "500 m²",
+            "facilities": "2 Lift (1 Penumpang, 1 Service), Area Parkir, Musholla"
+        }
+    },
+    "gallery": {
+        "tagline": "Pameran",
+        "title": "Momen Berkesan",
+        "desc": "Perjalanan visual melalui warisan dan pertunjukan modern di Usmar Ismail Hall.",
+        "view": "Lihat Cerita"
+    },
+    "cta": {
+        "title": "Wujudkan Mahakarya Anda di Venue Kami",
+        "subtitle": "Elegan · Warisan · Prestise",
+        "inquire": "Tanya Sekarang"
+    },
+    "contact": {
+        "tagline": "Hubungi Kami",
+        "title": "Kontak & Reservasi",
+        "location": "Lokasi Kami",
+        "phone": "Telepon",
+        "email": "Email",
+        "form": {
+            "name": "Nama Lengkap",
+            "email": "Alamat Email",
+            "type": "Tipe Inkuiri",
+            "message": "Pesan",
+            "send": "Kirim Pesan",
+            "options": {
+                "hall": "Reservasi Aula Utama",
+                "cinema": "Sewa Bioskop Mini",
+                "event": "Acara/Konferensi",
+                "other": "Lainnya"
+            }
+        }
+    },
+    "footer": {
+        "desc": "Gedung pertunjukan seni utama di Jakarta, didedikasikan untuk seni dan perfilman sejak didirikan.",
+        "nav": "Navigasi",
+        "inquiries": "Inkuiri",
+        "hall_booking": "Reservasi Hall",
+        "tech_specs": "Spesifikasi Teknis",
+        "media": "Media Kit",
+        "privacy": "Kebijakan Privasi",
+        "legal": "Legal",
+        "cookies": "Cookie",
+        "sitemap": "Peta Situs"
+    }
+}

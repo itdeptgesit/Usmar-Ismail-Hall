@@ -1,0 +1,146 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "facilities": "Facilities",
+        "office": "Office Space",
+        "virtual_office": "Service & Virtual",
+        "location": "Location",
+        "gallery": "Gallery",
+        "contact": "Contact"
+    },
+    "hero": {
+        "tagline": "The Hub of Arts and Culture",
+        "title": "Usmar Ismail",
+        "subtitle": "Hall",
+        "explore": "Explore Venue",
+        "book": "Book Now",
+        "scroll": "Scroll"
+    },
+    "about": {
+        "tagline": "Our Heritage",
+        "title": "A Legacy of Artistic Excellence",
+        "p1": "Usmar Ismail Hall is Indonesia's first integrated Theater and Performance Venue that combines cinema and concert spaces. The 624 square meter theater has a seating capacity of 422 seats.",
+        "p2": "Designed with exclusive interiors and modern lighting, this Theater supports audience comfort in enjoying every presented event. This multifunctional Theater is also equipped with a hall, multi-purpose rooms, and a spacious lobby to support entertainment, corporate events, seminars, graduations, and streaming.",
+        "more": "Learn More"
+    },
+    "facilities": {
+        "tagline": "Our Venue",
+        "title": "World-Class Facilities",
+        "concert_hall": {
+            "title": "Concert Hall",
+            "desc": "450-seat state-of-the-art auditorium with world-class acoustics."
+        },
+        "recording": {
+            "title": "Recording Studio",
+            "desc": "Professional-grade equipment for high-fidelity audio production."
+        },
+        "conference": {
+            "title": "Conference Room",
+            "desc": "Versatile spaces for corporate meetings and private seminars."
+        },
+        "cinema": {
+            "title": "Mini Cinema",
+            "desc": "Intimate screening room for film premieres and independent creators."
+        }
+    },
+    "office": {
+        "tagline": "Leasing",
+        "title": "Office Space",
+        "desc": "The H. Usmar Ismail Film Center Building location has very easy access by both private and public transportation.",
+        "size": "Size: 30 m² – 400 m²",
+        "condition": "Conditions Available:",
+        "furnished": "Fully Furnished",
+        "partition": "Partition",
+        "semi_furnished": "Semi Furnished",
+        "contact": "Contact Us",
+        "access": "Strategic Public Transport Access"
+    },
+    "virtual_office": {
+        "tagline": "Flexible Workspace",
+        "title": "Service & Virtual Office",
+        "desc": "Flexible office solutions available for daily, weekly, monthly, even yearly rent. Ideal for startups and prestigious companies.",
+        "inquire": "Inquire Now",
+        "list": {
+            "elec": "Electricity & AC",
+            "wifi": "High Speed Wifi",
+            "print": "Print & Photocopy",
+            "pantry": "Pantry (Free Mineral Water)",
+            "lounge": "Executive Lounge",
+            "musholla": "Prayer Room (Musholla)",
+            "meeting": "Meeting Room",
+            "check": "Self Check-in & Out"
+        }
+    },
+    "location": {
+        "tagline": "Building Specs",
+        "title": "Info & Location",
+        "desc": "Grade C Office Building in Jakarta's Golden Triangle, combining efficiency with primary accessibility.",
+        "specs": {
+            "type": "Building Type",
+            "height": "Storeys",
+            "area": "Building Area",
+            "avg_floor": "Average per Floor",
+            "facilities": "Main Facilities"
+        },
+        "location_title": "Strategic Location",
+        "minutes": "{{count}} Minutes",
+        "lrt": "Kuningan LRT Station (Integrated with MRT, Busway, KRL)",
+        "walking": "Walking Distance",
+        "hotel": "JS Luwansa Hotel",
+        "hospital": "MMC Hospital",
+        "market": "Pasar Festival",
+        "mall": "Epicentrum Walk",
+        "quote": "Supporting high mobility with easy access.",
+        "specs_values": {
+            "type": "Office Grade C",
+            "height": "5 Floors",
+            "area": "2,371 m²",
+            "avg_floor": "500 m²",
+            "facilities": "2 Elevators (1 Passenger, 1 Service), Parking Area, Prayer Room"
+        }
+    },
+    "gallery": {
+        "tagline": "Exhibition",
+        "title": "Captured Moments",
+        "desc": "A visual journey through the heritage and modern performances at Usmar Ismail Hall.",
+        "view": "View Story"
+    },
+    "cta": {
+        "title": "Host Your Masterpiece At Our Venue",
+        "subtitle": "Elegance · Heritage · Prestige",
+        "inquire": "Inquire Now"
+    },
+    "contact": {
+        "tagline": "Get In Touch",
+        "title": "Contact & Booking",
+        "location": "Our Location",
+        "phone": "Phone",
+        "email": "Email",
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "type": "Inquiry Type",
+            "message": "Message",
+            "send": "Send Message",
+            "options": {
+                "hall": "Concert Hall Booking",
+                "cinema": "Mini Cinema Rental",
+                "event": "Conference / Event",
+                "other": "Other Inquiry"
+            }
+        }
+    },
+    "footer": {
+        "desc": "The premier cultural venue in Jakarta, dedicated to the arts, cinema, and performance excellence since its establishment.",
+        "nav": "Navigation",
+        "inquiries": "Inquiries",
+        "hall_booking": "Hall Booking",
+        "tech_specs": "Technical Specs",
+        "media": "Media Kit",
+        "privacy": "Privacy Policy",
+        "legal": "Legal",
+        "cookies": "Cookies",
+        "sitemap": "Sitemap"
+    }
+}
