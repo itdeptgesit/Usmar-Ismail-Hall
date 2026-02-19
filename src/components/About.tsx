@@ -17,9 +17,10 @@ const About = () => {
                         className="aspect-[4/5] bg-[#1a1a1a] overflow-hidden"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?q=80&w=2069&auto=format&fit=crop"
+                            src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?q=80&w=1200&auto=format&fm=webp&fit=crop"
                             alt="Usmar Ismail Hall Interior"
                             className="w-full h-full object-cover grayscale brightness-75 hover:scale-110 transition-transform duration-1000"
+                            loading="lazy"
                         />
                     </motion.div>
 

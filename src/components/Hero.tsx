@@ -9,35 +9,32 @@ const Hero = () => {
     return (
         <section className="relative h-screen w-full overflow-hidden bg-black">
             {/* Background Image */}
-            <motion.div
-                initial={{ scale: 1.1, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 1.5 }}
-                className="absolute inset-0 z-0"
-            >
+            <div className="absolute inset-0 z-0">
                 <img
                     src="https://usmarismailhall.com/wp-content/uploads/2024/04/cropped-Theater-2-1-scaled-1.jpg"
                     alt="Usmar Ismail Hall Theater"
                     className="h-full w-full object-cover brightness-50"
+                    loading="eager"
+                    fetchPriority="high"
                 />
-            </motion.div>
+            </div>
 
             {/* Content Overlay */}
             <div className="relative z-10 flex h-full items-center justify-center px-6">
                 <div className="text-center">
                     <motion.span
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5 }}
+                        transition={{ duration: 0.5 }}
                         className="mb-4 block text-xs font-semibold uppercase tracking-[0.5em] text-gold md:text-sm"
                     >
                         {t('hero.tagline')}
                     </motion.span>
 
                     <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.7 }}
+                        transition={{ duration: 0.5, delay: 0.1 }}
                         className="mb-8 font-sans text-5xl font-bold uppercase tracking-[0.2em] text-white md:text-8xl"
                     >
                         {t('hero.title')}<br />
@@ -45,9 +42,9 @@ const Hero = () => {
                     </motion.h1>
 
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.9 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.3 }}
                         className="flex flex-col items-center justify-center gap-6 md:flex-row"
                     >
                         <Link to="/about" className="btn-primary">
