@@ -32,7 +32,7 @@ export const submitContactForm = async (data: {
     }
 
     try {
-        const response = await fetch(SCRIPT_URL, {
+        await fetch(SCRIPT_URL, {
             method: "POST",
             mode: "no-cors", // Required for Google Scripts
             cache: "no-cache",
