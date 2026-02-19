@@ -10,6 +10,8 @@ import LegalPage from './pages/LegalPage';
 import CookiesPage from './pages/CookiesPage';
 import SitemapPage from './pages/SitemapPage';
 
+import WhatsAppButton from './components/WhatsAppButton';
+
 function App() {
   return (
     <Router>
@@ -26,6 +28,7 @@ function App() {
           <Route path="/sitemap" element={<SitemapPage />} />
         </Routes>
         <Footer />
+        <WhatsAppButton />
       </div>
     </Router>
   );

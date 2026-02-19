@@ -142,5 +142,9 @@
         "legal": "Legal",
         "cookies": "Cookies",
         "sitemap": "Sitemap"
+    },
+    "whatsapp": {
+        "tooltip": "Chat via WhatsApp",
+        "message": "Hello Usmar Ismail Hall, I would like to inquire about..."
     }
 }

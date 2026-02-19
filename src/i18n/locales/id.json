@@ -142,5 +142,9 @@
         "legal": "Legal",
         "cookies": "Cookie",
         "sitemap": "Peta Situs"
+    },
+    "whatsapp": {
+        "tooltip": "Chat via WhatsApp",
+        "message": "Halo Usmar Ismail Hall, saya ingin bertanya tentang..."
     }
 }
