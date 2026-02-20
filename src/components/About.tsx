@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { optimizeImage } from '../lib/utils';
 
 const About = () => {
     const { t } = useTranslation();
@@ -17,9 +17,9 @@ const About = () => {
                         className="aspect-[4/5] bg-[#1a1a1a] overflow-hidden"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?q=80&w=1200&auto=format&fm=webp&fit=crop"
-                            alt="Usmar Ismail Hall Interior"
-                            className="w-full h-full object-cover grayscale brightness-75 hover:scale-110 transition-transform duration-1000"
+                            src={optimizeImage("https://usmarismailhall.com/wp-content/uploads/2024/04/image-3.png", { width: 1000, quality: 75 })}
+                            alt="Gedung PPHUI"
+                            className="w-full h-full object-cover grayscale brightness-90 hover:scale-110 transition-transform duration-1000"
                             loading="lazy"
                         />
                     </motion.div>
@@ -33,7 +33,7 @@ const About = () => {
                     >
                         <div className="space-y-4">
                             <span className="text-gold tracking-[0.4em] uppercase text-xs font-semibold">{t('about.tagline')}</span>
-                            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-black uppercase">
+                            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-black uppercase">
                                 {t('about.title')}
                             </h2>
                         </div>
@@ -46,11 +46,20 @@ const About = () => {
                             {t('about.p2')}
                         </p>
 
-                        <div className="pt-4">
-                            <Link to="/about" className="inline-flex items-center gap-4 text-black font-bold uppercase tracking-[0.2em] text-sm group">
-                                {t('about.more')}
-                                <div className="w-12 h-[1px] bg-black transition-all duration-300 group-hover:w-20" />
-                            </Link>
+                        <div className="space-y-4 pt-4">
+                            <h4 className="text-xs font-bold uppercase tracking-[0.3em] text-black/40">
+                                {t('services.tagline')}
+                            </h4>
+                            <div className="flex flex-col gap-3">
+                                {[t('services.hall'), t('services.virtual'), t('services.office')].map((service) => (
+                                    <div key={service} className="flex items-center gap-4 group">
+                                        <div className="w-8 h-[1px] bg-gold" />
+                                        <span className="text-sm font-bold uppercase tracking-widest text-black group-hover:text-gold transition-colors cursor-default">
+                                            {service}
+                                        </span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </motion.div>
                 </div>

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { optimizeImage } from '../lib/utils';
 
 const AboutHero = () => {
     const { t } = useTranslation();
@@ -14,9 +15,9 @@ const AboutHero = () => {
                 className="absolute inset-0 z-0"
             >
                 <img
-                    src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop"
-                    alt="Cinema Performance Atmosphere"
-                    className="h-full w-full object-cover brightness-[0.35] contrast-125"
+                    src={optimizeImage("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab", { width: 1920, quality: 75 })}
+                    alt="PPHUI Building Architecture"
+                    className="h-full w-full object-cover brightness-[0.4] contrast-100"
                 />
                 <div className="absolute inset-0 bg-black/20" />
             </motion.div>
@@ -24,22 +25,14 @@ const AboutHero = () => {
             {/* Content Overlay */}
             <div className="relative z-10 flex h-full items-center justify-center px-6">
                 <div className="text-center">
-                    <motion.span
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5 }}
-                        className="mb-4 block text-xs font-semibold uppercase tracking-[0.5em] text-gold md:text-sm drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]"
-                    >
-                        {t('about.tagline')}
-                    </motion.span>
 
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.7 }}
-                        className="font-sans text-4xl font-bold uppercase tracking-[0.3em] text-white md:text-7xl drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]"
+                        className="font-sans text-3xl font-bold uppercase tracking-[0.15em] text-white md:text-5xl lg:text-6xl drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] leading-tight max-w-4xl"
                     >
-                        {t('nav.about')}
+                        {t('about.title')}
                     </motion.h1>
                 </div>
             </div>

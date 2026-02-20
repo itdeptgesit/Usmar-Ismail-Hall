@@ -69,7 +69,7 @@ const OfficeSpace = () => {
                     >
                         <div className="aspect-video bg-black overflow-hidden border border-black/5">
                             <img
-                                src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+                                src="/image/office.png"
                                 alt="Modern Office Space"
                                 className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
                             />

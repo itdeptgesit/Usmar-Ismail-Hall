@@ -2,12 +2,10 @@
     "nav": {
         "home": "Home",
         "about": "About Us",
-        "facilities": "Facilities",
-        "office": "Office Space",
-        "virtual_office": "Service & Virtual",
-        "location": "Location",
+        "services": "Our Services",
         "gallery": "Gallery",
-        "contact": "Contact"
+        "contact": "Contact",
+        "promotions": "Promotions"
     },
     "hero": {
         "tagline": "The Hub of Arts and Culture",
@@ -17,23 +15,42 @@
         "book": "Book Now",
         "scroll": "Scroll"
     },
+    "home_brief": {
+        "tagline": "Since 1970s",
+        "title_1": "The Legacy of",
+        "title_2": "Indonesian Cinema",
+        "desc": "The PPHUI Building is more than just office space. It is a center of Indonesian film history located right in the heart of Kuningan's business district, Jakarta.",
+        "cap_title": "420 Seats",
+        "cap_desc": "Seating Capacity",
+        "hub_title": "Grade C",
+        "hub_desc": "Business Hub",
+        "cta": "Discover Our Heritage"
+    },
+    "home_location": {
+        "tagline": "Strategic Hub",
+        "title_1": "Prime Location",
+        "title_2": "In Kuningan",
+        "hub_name": "Golden Triangle Center",
+        "hub_addr": "Jl. H. R. Rasuna Said No.Kav. C-22, Karet Kuningan, South Jakarta.",
+        "access_name": "Main Accessibility",
+        "experience": "Experience",
+        "atmosphere": "Business Atmosphere",
+        "heart": "Heart of Business",
+        "city": "South Jakarta"
+    },
     "about": {
-        "tagline": "Our Heritage",
-        "title": "A Legacy of Artistic Excellence",
-        "p1": "Usmar Ismail Hall is Indonesia's first integrated Theater and Performance Venue that combines cinema and concert spaces. The 624 square meter theater has a seating capacity of 422 seats.",
-        "p2": "Designed with exclusive interiors and modern lighting, this Theater supports audience comfort in enjoying every presented event. This multifunctional Theater is also equipped with a hall, multi-purpose rooms, and a spacious lobby to support entertainment, corporate events, seminars, graduations, and streaming.",
-        "more": "Learn More About Us"
+        "tagline": "PPHUI",
+        "title": "PPHUI Building",
+        "p1": "Grade C Office Building in Jakarta's Golden Triangle. 5 storeys with 2,371 m² total area (avg 500 m² per floor).",
+        "p2": "Facilities include 2 elevators (Passenger & Service), parking area, and prayer room (musholla) for your business comfort.",
+        "more": "Learn More"
     },
     "facilities": {
         "tagline": "Our Venue",
         "title": "World-Class Facilities",
         "concert_hall": {
             "title": "Concert Hall",
-            "desc": "450-seat state-of-the-art auditorium with world-class acoustics."
-        },
-        "recording": {
-            "title": "Recording Studio",
-            "desc": "Professional-grade equipment for high-fidelity audio production."
+            "desc": "420-seat state-of-the-art auditorium with world-class acoustics."
         },
         "conference": {
             "title": "Conference Room",
@@ -59,23 +76,36 @@
     "virtual_office": {
         "tagline": "Flexible Workspace",
         "title": "Service & Virtual Office",
-        "desc": "Flexible office solutions available for daily, weekly, monthly, even yearly rent. Ideal for startups and prestigious companies.",
+        "desc": "We offer Service Office and Virtual Office solutions available for daily, weekly, monthly, or yearly rental.",
         "inquire": "Inquire Now",
         "list": {
             "elec": "Electricity & AC",
-            "wifi": "High Speed Wifi",
-            "print": "Print & Photocopy",
-            "pantry": "Pantry (Free Mineral Water)",
-            "lounge": "Executive Lounge",
+            "wifi": "Wifi",
+            "print": "Print & Photocopy machine",
+            "pantry": "Shared Pantry – free mineral water",
+            "lounge": "Lounge",
             "musholla": "Prayer Room (Musholla)",
             "meeting": "Meeting Room",
-            "check": "Self Check-in & Out"
+            "check": "Self Check-in & Check-out"
+        },
+        "benefits": {
+            "title_1": "Prestige for",
+            "title_2": "Your Brand",
+            "desc": "Leverage a prestigious business domicile in Rasuna Said, Kuningan to enhance your company's credibility without high conventional office rental costs.",
+            "legal_title": "Guaranteed Legality",
+            "legal_desc": "Valid business domicile in accordance with Government Regulations for NIB and PKP requirements.",
+            "mail_title": "Mail Management",
+            "mail_desc": "Professional mail and package handling services for smooth operational flow.",
+            "location_title": "Prestigious Location",
+            "location_desc": "Business address in Kuningan, South Jakarta that elevates your brand's credibility.",
+            "flex_title": "Flexible Rental",
+            "flex_desc": "Flexible daily to yearly options to adapt to your startup's growth needs."
         }
     },
     "location": {
-        "tagline": "Building Specs",
-        "title": "Info & Location",
-        "desc": "Grade C Office Building in Jakarta's Golden Triangle, combining efficiency with primary accessibility.",
+        "tagline": "Strategic",
+        "title": "Location & Access",
+        "desc": "The location of the H. Usmar Ismail Film Center Building is highly strategic with primary accessibility in the heart of Jakarta's business district.",
         "specs": {
             "type": "Building Type",
             "height": "Storeys",
@@ -104,7 +134,7 @@
         "tagline": "Exhibition",
         "title": "Captured Moments",
         "desc": "A visual journey through the heritage and modern performances at Usmar Ismail Hall.",
-        "view": "View Story"
+        "view": "View Detail"
     },
     "cta": {
         "title": "Host Your Masterpiece At Our Venue",
@@ -134,17 +164,44 @@
     "footer": {
         "desc": "The premier cultural venue in Jakarta, dedicated to the arts, cinema, and performance excellence since its establishment.",
         "nav": "Navigation",
-        "inquiries": "Inquiries",
-        "hall_booking": "Hall Booking",
+        "inquiries": "Booking & Services",
+        "hall_booking": "Concert Hall",
+        "facilities": "Our Facilities",
+        "office": "Office Solutions",
         "tech_specs": "Technical Specs",
-        "media": "Media Kit",
+        "media": "Media & Press",
         "privacy": "Privacy Policy",
         "legal": "Legal",
         "cookies": "Cookies",
         "sitemap": "Sitemap"
     },
+    "services": {
+        "tagline": "Our Services",
+        "title": "Integrated Solutions",
+        "hall": "Usmar Ismail Hall",
+        "hall_desc": "Premier arts venue with world-class facilities for concerts, theater, and film screenings.",
+        "office": "Office Space",
+        "office_desc": "Strategic office rentals in Jakarta's Golden Triangle with various size options.",
+        "virtual": "Service & Virtual Office",
+        "virtual_desc": "Flexible office solutions for startups and professionals needing a prestigious business address."
+    },
     "whatsapp": {
         "tooltip": "Chat via WhatsApp",
         "message": "Hello Usmar Ismail Hall, I would like to inquire about..."
+    },
+    "promotions": {
+        "tagline": "Exclusive Offers",
+        "title_1": "MONTHLY",
+        "title_2": "PROMOTIONS",
+        "active": "Active Now",
+        "feb_title": "Special February Promotion 2026",
+        "feb_desc": "Celebrate the month of love with special offers for every venue and workspace booking in the heart of South Jakarta. Consult your needs now.",
+        "claim": "CLAIM THIS PROMOTION",
+        "valid_until": "Valid Until",
+        "valid_desc": "Limited time only. Book before 28 Feb 2026 to secure pricing.",
+        "eligibility": "Venue Eligibility",
+        "eligibility_desc": "Applies to Usmar Ismail Hall, Conference Rooms, and Virtual Offices.",
+        "how_to": "How to Use",
+        "how_to_desc": "Mention \"FEBPROMO26\" when inquiring via WhatsApp or Contact Form."
     }
 }

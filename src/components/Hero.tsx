@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { optimizeImage } from '../lib/utils';
 
 const Hero = () => {
     const { t } = useTranslation();
@@ -11,7 +12,7 @@ const Hero = () => {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://usmarismailhall.com/wp-content/uploads/2024/04/cropped-Theater-2-1-scaled-1.jpg"
+                    src={optimizeImage("https://usmarismailhall.com/wp-content/uploads/2024/04/cropped-Theater-2-1-scaled-1.jpg", { width: 1920, quality: 80 })}
                     alt="Usmar Ismail Hall Theater"
                     className="h-full w-full object-cover brightness-50"
                     loading="eager"

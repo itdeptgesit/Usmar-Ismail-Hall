@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Music, Users, MonitorPlay, Mic2 } from 'lucide-react';
+import { Music, Users, MonitorPlay } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Facilities = () => {
@@ -10,11 +10,6 @@ const Facilities = () => {
             icon: Music,
             title: t('facilities.concert_hall.title'),
             desc: t('facilities.concert_hall.desc'),
-        },
-        {
-            icon: Mic2,
-            title: t('facilities.recording.title'),
-            desc: t('facilities.recording.desc'),
         },
         {
             icon: Users,
@@ -39,7 +34,7 @@ const Facilities = () => {
                         </h2>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-white/10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/10">
                     {facilityData.map((fac, index) => (
                         <motion.div
                             key={fac.title}

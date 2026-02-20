@@ -2,12 +2,10 @@
     "nav": {
         "home": "Beranda",
         "about": "Tentang Kami",
-        "facilities": "Fasilitas",
-        "office": "Ruang Kantor",
-        "virtual_office": "Service & Virtual",
-        "location": "Lokasi",
+        "services": "Layanan Kami",
         "gallery": "Galeri",
-        "contact": "Kontak"
+        "contact": "Kontak",
+        "promotions": "Promosi"
     },
     "hero": {
         "tagline": "Pusat Seni dan Budaya",
@@ -17,23 +15,42 @@
         "book": "Reservasi Sekarang",
         "scroll": "Gulir"
     },
+    "home_brief": {
+        "tagline": "Sejak 1970-an",
+        "title_1": "Warisan",
+        "title_2": "Perfilman Indonesia",
+        "desc": "Gedung PPHUI bukan sekadar ruang perkantoran. Ini adalah pusat sejarah perfilman Indonesia yang terletak tepat di jantung bisnis Kuningan, Jakarta.",
+        "cap_title": "420 Kursi",
+        "cap_desc": "Kapasitas Penonton",
+        "hub_title": "Grade C",
+        "hub_desc": "Pusat Bisnis",
+        "cta": "Temukan Warisan Kami"
+    },
+    "home_location": {
+        "tagline": "Pusat Strategis",
+        "title_1": "Lokasi Utama",
+        "title_2": "Di Kuningan",
+        "hub_name": "Pusat Segitiga Emas",
+        "hub_addr": "Jl. H. R. Rasuna Said No.Kav. C-22, Karet Kuningan, Jakarta Selatan.",
+        "access_name": "Aksesibilitas Utama",
+        "experience": "Pengalaman",
+        "atmosphere": "Atmosfer Bisnis",
+        "heart": "Pusat Bisnis",
+        "city": "Jakarta Selatan"
+    },
     "about": {
-        "tagline": "Warisan Kami",
-        "title": "Legasi Seni Luar Biasa",
-        "p1": "Usmar Ismail Hall merupakan Theater dan Gedung Pertunjukan terintegrasi pertama di Indonesia yang menggabungkan ruang sinema dan konser. Theater seluas 624 meter persegi memiliki kapasitas tempat duduk sebanyak 422 kursi.",
-        "p2": "Dirancang dengan interior eksklusif dan penataan lampu modern, Theater ini menunjang kenyamanan penonton dalam menikmati setiap acara. Theater multifungsi ini juga dilengkapi aula, ruang serbaguna, dan lobi luas untuk mendukung acara hiburan, kantor, seminar, graduation, hingga streaming.",
-        "more": "Pelajari Lebih Lanjut Tentang Kami"
+        "tagline": "PPHUI",
+        "title": "Gedung PPHUI",
+        "p1": "Gedung Perkantoran Grade C di Segitiga Emas Jakarta. Memiliki 5 lantai dengan total luas 2.371 m² (rata-rata 500 m² per lantai).",
+        "p2": "Fasilitas lengkap mencakup 2 elevator (Passenger & Service), area parkir luas, dan Musholla untuk kenyamanan bisnis Anda.",
+        "more": "Pelajari Selengkapnya"
     },
     "facilities": {
         "tagline": "Venue Kami",
         "title": "Fasilitas Kelas Dunia",
         "concert_hall": {
             "title": "Aula Utama",
-            "desc": "Auditorium 450 kursi dengan akustik kelas dunia."
-        },
-        "recording": {
-            "title": "Studio Rekaman",
-            "desc": "Peralatan profesional untuk produksi audio berkualitas tinggi."
+            "desc": "Auditorium 420 kursi dengan akustik kelas dunia."
         },
         "conference": {
             "title": "Ruang Konferensi",
@@ -57,25 +74,38 @@
         "access": "Akses Strategis Transportasi Umum"
     },
     "virtual_office": {
-        "tagline": "Ruang kerja fleksibel",
+        "tagline": "Ruang Kerja Fleksibel",
         "title": "Service & Virtual Office",
-        "desc": "Solusi kantor yang disewa harian, mingguan, bulanan hingga tahunan. Ideal untuk startup dan startup prestisius.",
+        "desc": "Kami memiliki Service Office dan Virtual Office yang dapat disewa harian, mingguan, bulanan, bahkan tahunan.",
         "inquire": "Hubungi Sekarang",
         "list": {
             "elec": "Listrik & AC",
-            "wifi": "Wifi Cepat",
-            "print": "Print & Fotocopy",
-            "pantry": "Pantry & Air Mineral",
-            "lounge": "Executive Lounge",
+            "wifi": "Wifi",
+            "print": "Mesin print dan fotocopy",
+            "pantry": "Pantry bersama – free air mineral",
+            "lounge": "Lounge",
             "musholla": "Musholla",
             "meeting": "Ruang Meeting",
-            "check": "Self Check-in & Out"
+            "check": "Self Check in dan Check out"
+        },
+        "benefits": {
+            "title_1": "Prestige for",
+            "title_2": "Your Brand",
+            "desc": "Manfaatkan domisili bisnis prestisius di Rasuna Said, Kuningan untuk meningkatkan kredibilitas perusahaan Anda tanpa biaya kantor konvensional yang tinggi.",
+            "legal_title": "Legalitas Terjamin",
+            "legal_desc": "Domisili bisnis sah sesuai Peraturan Pemerintah untuk kebutuhan NIB dan PKP.",
+            "mail_title": "Manajemen Surat",
+            "mail_desc": "Layanan penanganan surat dan paket secara profesional demi kelancaran operasional.",
+            "location_title": "Lokasi Prestisius",
+            "location_desc": "Alamat bisnis di Kuningan, Jakarta Selatan yang meningkatkan kredibilitas brand Anda.",
+            "flex_title": "Sewa Fleksibel",
+            "flex_desc": "Pilihan fleksibel harian hingga tahunan menyesuaikan kebutuhan pertumbuhan startup Anda."
         }
     },
     "location": {
-        "tagline": "Spesifikasi Gedung",
-        "title": "Informasi & Lokasi",
-        "desc": "Gedung Perkantoran Grade C di Segitiga Emas Jakarta, menggabungkan efisiensi dengan aksesibilitas utama.",
+        "tagline": "Strategis",
+        "title": "Lokasi & Akses",
+        "desc": "Lokasi Gedung Pusat Perfilman H. Usmar Ismail sangat strategis dan memiliki aksesibilitas utama di jantung bisnis Jakarta.",
         "specs": {
             "type": "Tipe Gedung",
             "height": "Ketinggian",
@@ -104,7 +134,7 @@
         "tagline": "Pameran",
         "title": "Momen Berkesan",
         "desc": "Perjalanan visual melalui warisan dan pertunjukan modern di Usmar Ismail Hall.",
-        "view": "Lihat Cerita"
+        "view": "Lihat Detail"
     },
     "cta": {
         "title": "Wujudkan Mahakarya Anda di Venue Kami",
@@ -134,17 +164,44 @@
     "footer": {
         "desc": "Gedung pertunjukan seni utama di Jakarta, didedikasikan untuk seni dan perfilman sejak didirikan.",
         "nav": "Navigasi",
-        "inquiries": "Inkuiri",
-        "hall_booking": "Reservasi Hall",
+        "inquiries": "Reservasi & Layanan",
+        "hall_booking": "Gedung Pertunjukan",
+        "facilities": "Fasilitas Kami",
+        "office": "Solusi Perkantoran",
         "tech_specs": "Spesifikasi Teknis",
-        "media": "Media Kit",
+        "media": "Media & Kemitraan",
         "privacy": "Kebijakan Privasi",
         "legal": "Legal",
         "cookies": "Cookie",
         "sitemap": "Peta Situs"
     },
+    "services": {
+        "tagline": "Layanan Kami",
+        "title": "Solusi Terintegrasi",
+        "hall": "Usmar Ismail Hall",
+        "hall_desc": "Gedung pertunjukan seni utama dengan fasilitas kelas dunia untuk konser, teater, dan pemutaran film.",
+        "office": "Ruang Kantor",
+        "office_desc": "Penyewaan ruang kantor strategis di Segitiga Emas Jakarta dengan berbagai pilihan ukuran.",
+        "virtual": "Service & Virtual Office",
+        "virtual_desc": "Solusi kantor fleksibel untuk startup dan profesional yang membutuhkan domisili bisnis prestisius."
+    },
     "whatsapp": {
         "tooltip": "Chat via WhatsApp",
         "message": "Halo Usmar Ismail Hall, saya ingin bertanya tentang..."
+    },
+    "promotions": {
+        "tagline": "Penawaran Eksklusif",
+        "title_1": "PROMOSI",
+        "title_2": "BULANAN",
+        "active": "Aktif Sekarang",
+        "feb_title": "Promo Spesial Februari 2026",
+        "feb_desc": "Rayakan bulan kasih sayang dengan penawaran spesial untuk setiap pemesanan venue dan ruang kerja di jantung Jakarta Selatan. Konsultasikan kebutuhan Anda sekarang.",
+        "claim": "KLAIM PROMOSI INI",
+        "valid_until": "Berlaku Sampai",
+        "valid_desc": "Waktu terbatas. Pesan sebelum 28 Feb 2026 untuk mengamankan harga.",
+        "eligibility": "Kelayakan Venue",
+        "eligibility_desc": "Berlaku untuk Usmar Ismail Hall, Ruang Konferensi, dan Virtual Office.",
+        "how_to": "Cara Menggunakan",
+        "how_to_desc": "Sebutkan \"FEBPROMO26\" saat bertanya melalui WhatsApp atau Formulir Kontak."
     }
 }

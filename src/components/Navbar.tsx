@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, Globe } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { useState, useEffect, useRef } from 'react';
+import { Menu, X, Globe, ChevronDown } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '../lib/utils';
@@ -10,6 +10,8 @@ const Navbar = () => {
     const location = useLocation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+    const dropdownRef = useRef<HTMLDivElement>(null);
 
     const isHomePage = location.pathname === '/';
 
@@ -17,8 +19,17 @@ const Navbar = () => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
+        const handleClickOutside = (event: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setServicesDropdownOpen(false);
+            }
+        };
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
     }, []);
 
     const toggleLanguage = () => {
@@ -29,6 +40,15 @@ const Navbar = () => {
     const navLinks = [
         { name: t('nav.home'), href: '/' },
         { name: t('nav.about'), href: '/about' },
+        {
+            name: t('nav.services'),
+            href: '#',
+            dropdown: [
+                { name: t('services.hall'), href: '/hall' },
+                { name: t('services.office'), href: '/office' },
+                { name: t('services.virtual'), href: '/virtual-office' },
+            ]
+        },
         { name: t('nav.gallery'), href: '/gallery' },
         { name: t('nav.contact'), href: '/contact' },
     ];
@@ -48,13 +68,51 @@ const Navbar = () => {
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center space-x-8">
                     {navLinks.map((link) => (
-                        <Link
-                            key={link.name}
-                            to={link.href}
-                            className="text-white/80 hover:text-white uppercase tracking-widest text-[10px] lg:text-xs transition-colors"
-                        >
-                            {link.name}
-                        </Link>
+                        link.dropdown ? (
+                            <div
+                                key={link.name}
+                                className="relative group"
+                                ref={dropdownRef}
+                                onMouseEnter={() => setServicesDropdownOpen(true)}
+                                onMouseLeave={() => setServicesDropdownOpen(false)}
+                            >
+                                <button
+                                    className="flex items-center gap-1 text-white/80 hover:text-white uppercase tracking-widest text-[10px] lg:text-xs transition-colors"
+                                >
+                                    {link.name}
+                                    <ChevronDown size={12} className={cn("transition-transform duration-300", servicesDropdownOpen && "rotate-180")} />
+                                </button>
+
+                                <AnimatePresence>
+                                    {servicesDropdownOpen && (
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 10 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: 10 }}
+                                            className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-black/95 backdrop-blur-xl border border-white/10 p-2 shadow-2xl"
+                                        >
+                                            {link.dropdown.map((sub) => (
+                                                <Link
+                                                    key={sub.name}
+                                                    to={sub.href}
+                                                    className="block px-4 py-3 text-[10px] lg:text-xs text-white/70 hover:text-gold hover:bg-white/5 transition-all uppercase tracking-widest"
+                                                >
+                                                    {sub.name}
+                                                </Link>
+                                            ))}
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
+                        ) : (
+                            <Link
+                                key={link.name}
+                                to={link.href}
+                                className="text-white/80 hover:text-white uppercase tracking-widest text-[10px] lg:text-xs transition-colors"
+                            >
+                                {link.name}
+                            </Link>
+                        )
                     ))}
 
                     <button
@@ -104,21 +162,42 @@ const Navbar = () => {
                     <X size={32} />
                 </button>
 
-                <div className="flex flex-col items-center space-y-10">
+                <div className="flex flex-col items-center space-y-8 w-full px-12">
                     {navLinks.map((link, index) => (
                         <motion.div
                             key={link.name}
                             initial={{ opacity: 0, y: 20 }}
                             animate={mobileMenuOpen ? { opacity: 1, y: 0 } : {}}
                             transition={{ delay: index * 0.1 }}
+                            className="w-full text-center"
                         >
-                            <Link
-                                to={link.href}
-                                onClick={() => setMobileMenuOpen(false)}
-                                className="text-white text-2xl font-bold uppercase tracking-[0.3em] hover:text-gold transition-colors block text-center"
-                            >
-                                {link.name}
-                            </Link>
+                            {link.dropdown ? (
+                                <div className="space-y-4">
+                                    <span className="text-white/40 text-[10px] uppercase tracking-[0.4em] font-bold block mb-2">
+                                        {link.name}
+                                    </span>
+                                    <div className="flex flex-col space-y-4">
+                                        {link.dropdown.map((sub) => (
+                                            <Link
+                                                key={sub.name}
+                                                to={sub.href}
+                                                onClick={() => setMobileMenuOpen(false)}
+                                                className="text-white text-xl font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors block"
+                                            >
+                                                {sub.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            ) : (
+                                <Link
+                                    to={link.href}
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className="text-white text-2xl font-bold uppercase tracking-[0.3em] hover:text-gold transition-colors block text-center"
+                                >
+                                    {link.name}
+                                </Link>
+                            )}
                         </motion.div>
                     ))}
 
